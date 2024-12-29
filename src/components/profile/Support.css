@@ -1,0 +1,263 @@
+.support {
+  padding: 1rem;
+}
+
+/* Help Search Section */
+.help-search {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.help-search h2 {
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.search-box {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-box svg {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+}
+
+.search-box input {
+  width: 100%;
+  padding: 1rem 1rem 1rem 3rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--surface-color);
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+/* Support Options */
+.support-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.support-card {
+  background: var(--surface-color);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.support-card:hover {
+  transform: translateY(-5px);
+}
+
+.support-card svg {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.support-card h3 {
+  color: var(--text-primary);
+  margin: 0 0 0.5rem 0;
+}
+
+.support-card p {
+  color: var(--text-secondary);
+  margin: 0 0 1.5rem 0;
+}
+
+.support-card button {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.support-card button:hover {
+  background: var(--primary-dark);
+}
+
+/* Contact Support Section */
+.contact-support {
+  background: var(--surface-color);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+}
+
+.ticket-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 600px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  color: var(--text-secondary);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--background-color);
+  color: var(--text-primary);
+}
+
+.submit-ticket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-ticket:hover {
+  background: var(--primary-dark);
+}
+
+/* FAQs Section */
+.faqs {
+  background: var(--surface-color);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+}
+
+.faq-category {
+  margin-bottom: 2rem;
+}
+
+.faq-category h4 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq-item {
+  background: var(--background-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faq-item summary {
+  padding: 1rem;
+  cursor: pointer;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.faq-item summary:hover {
+  background: var(--hover-color);
+}
+
+.faq-item p {
+  padding: 1rem;
+  color: var(--text-secondary);
+  margin: 0;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Contact Info Section */
+.contact-info {
+  background: var(--surface-color);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.contact-method {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--background-color);
+  border-radius: 8px;
+}
+
+.contact-method svg {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.contact-method h4 {
+  color: var(--text-primary);
+  margin: 0 0 0.5rem 0;
+}
+
+.contact-method p {
+  color: var(--text-secondary);
+  margin: 0 0 0.5rem 0;
+}
+
+.contact-method span {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.start-chat {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.start-chat:hover {
+  background: var(--primary-dark);
+}
+
+@media (max-width: 768px) {
+  .support {
+    padding: 1rem 0;
+  }
+
+  .contact-support,
+  .faqs,
+  .contact-info {
+    padding: 1.5rem;
+  }
+
+  .support-card {
+    padding: 1.5rem;
+  }
+}

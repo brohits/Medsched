@@ -1,0 +1,133 @@
+.appointment-requests {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.appointment-requests h1 {
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.requests-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.request-card {
+  background-color: var(--background-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.request-card.approved {
+  border-left: 4px solid var(--success);
+}
+
+.request-card.declined {
+  border-left: 4px solid var(--danger);
+}
+
+.request-card.pending {
+  border-left: 4px solid var(--warning);
+}
+
+.request-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.request-header h3 {
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.status {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.status.approved {
+  background-color: var(--success-light);
+  color: var(--success);
+}
+
+.status.declined {
+  background-color: var(--danger-light);
+  color: var(--danger);
+}
+
+.status.pending {
+  background-color: var(--warning-light);
+  color: var(--warning);
+}
+
+.request-details {
+  margin-bottom: 1.5rem;
+}
+
+.detail-item {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.detail-item .label {
+  width: 80px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.request-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.action-btn {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.action-btn.approve {
+  background-color: var(--success);
+  color: white;
+}
+
+.action-btn.decline {
+  background-color: var(--danger);
+  color: white;
+}
+
+.action-btn:hover {
+  opacity: 0.9;
+}
+
+.no-requests {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .appointment-requests {
+    padding: 1rem;
+  }
+
+  .requests-container {
+    grid-template-columns: 1fr;
+  }
+}

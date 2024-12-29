@@ -1,0 +1,251 @@
+.medical-history {
+  padding: 1rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.section-header h2 {
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.edit-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.edit-button:hover {
+  background: var(--primary-dark);
+}
+
+.medical-sections {
+  display: grid;
+  gap: 2rem;
+}
+
+.medical-section {
+  background: var(--surface-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.section-title svg {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+.section-title h3 {
+  margin: 0;
+  flex-grow: 1;
+}
+
+.add-button {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.add-button:hover {
+  background: var(--hover-color);
+}
+
+.items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.medical-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: var(--background-color);
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.medical-item:hover {
+  background: var(--hover-color);
+}
+
+.item-info {
+  flex-grow: 1;
+}
+
+.item-info h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--text-primary);
+}
+
+.item-info p {
+  margin: 0.25rem 0;
+  color: var(--text-secondary);
+}
+
+.status, .severity {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.status.active {
+  background: rgba(var(--warning-rgb), 0.1);
+  color: var(--warning-color);
+}
+
+.status.managed {
+  background: rgba(var(--success-rgb), 0.1);
+  color: var(--success-color);
+}
+
+.status.resolved {
+  background: rgba(var(--info-rgb), 0.1);
+  color: var(--info-color);
+}
+
+.severity.mild {
+  background: rgba(var(--success-rgb), 0.1);
+  color: var(--success-color);
+}
+
+.severity.moderate {
+  background: rgba(var(--warning-rgb), 0.1);
+  color: var(--warning-color);
+}
+
+.severity.severe {
+  background: rgba(var(--danger-rgb), 0.1);
+  color: var(--danger-color);
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  color: var(--danger-color);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  margin-left: 1rem;
+}
+
+.delete-button:hover {
+  background: rgba(220, 53, 69, 0.1);
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: var(--background-color);
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.modal-content h3 {
+  margin: 0 0 1.5rem 0;
+  color: var(--text-primary);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--surface-color);
+  color: var(--text-primary);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.modal-actions button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.modal-actions button:first-child {
+  background: none;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+}
+
+.modal-actions button:last-child {
+  background: var(--primary-color);
+  border: none;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .medical-history {
+    padding: 1rem 0;
+  }
+
+  .medical-section {
+    padding: 1rem;
+  }
+
+  .modal-content {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+}

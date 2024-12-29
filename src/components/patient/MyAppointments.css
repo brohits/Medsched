@@ -1,0 +1,31 @@
+.my-appointments {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.appointments-header {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.appointments-header h1 {
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.appointments-content {
+  display: flex;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .my-appointments {
+    padding: 1rem;
+  }
+
+  .appointments-content {
+    flex-direction: column;
+  }
+}
